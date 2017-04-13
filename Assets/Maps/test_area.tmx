@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="left-down" width="75" height="75" tilewidth="16" tileheight="16" nextobjectid="1">
+<map version="1.0" orientation="orthogonal" renderorder="left-down" width="75" height="75" tilewidth="16" tileheight="16" nextobjectid="7">
+ <properties>
+  <property name="unity:scale" value=".0625"/>
+ </properties>
  <tileset firstgid="1" name="BaseTileSet" tilewidth="16" tileheight="16" spacing="1" tilecount="1767" columns="57">
   <image source="../Art/roguelikeSheet_transparent.png" width="968" height="526"/>
   <terraintypes>
@@ -27,28 +30,27 @@
   </tile>
   <tile id="60">
    <objectgroup draworder="index">
-    <object id="1" x="-0.0625" y="0" width="16" height="15.875"/>
+    <object id="3" x="0.144157" y="0" width="15.7131" height="15.7131"/>
    </objectgroup>
   </tile>
   <tile id="61">
    <objectgroup draworder="index">
-    <object id="1" x="-0.0625" y="0" width="16" height="15.9375"/>
+    <object id="3" x="0" y="-0.144157" width="15.8572" height="16.0014"/>
    </objectgroup>
   </tile>
   <tile id="116">
    <objectgroup draworder="index">
-    <object id="1" x="0" y="-0.0625" width="15.875" height="16"/>
+    <object id="3" x="0" y="0" width="15.8572" height="15.8572"/>
    </objectgroup>
   </tile>
   <tile id="117">
    <objectgroup draworder="index">
-    <object id="1" x="-0.0625" y="0.125" width="16" height="15.8125"/>
+    <object id="3" x="0" y="0" width="15.8572" height="15.8572"/>
    </objectgroup>
   </tile>
   <tile id="118">
    <objectgroup draworder="index">
-    <object id="1" x="0.125" y="0.0625" width="15.8125" height="15.875"/>
-    <object id="2" x="0.125" y="0.1875" width="15.8125" height="15.6875"/>
+    <object id="9" x="0" y="0" width="15.7131" height="15.7131"/>
    </objectgroup>
   </tile>
   <tile id="518" terrain="0,0,0,"/>
@@ -64,6 +66,11 @@
   <tile id="634" terrain=",0,,"/>
   <tile id="635" terrain="0,0,,"/>
   <tile id="636" terrain="0,,,"/>
+  <tile id="643">
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0.144157" width="15.7131" height="15.5689"/>
+   </objectgroup>
+  </tile>
  </tileset>
  <layer name="Tile Layer 1" width="75" height="75">
   <data encoding="csv">
@@ -224,6 +231,9 @@
 </data>
  </layer>
  <layer name="Objects" width="75" height="75">
+  <properties>
+   <property name="unity:sortingLayerName" value="WorldObjects"/>
+  </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -302,4 +312,13 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup name="CollisionLayer">
+  <object id="1" x="98" y="367.5">
+   <polyline points="0,0 9.5,-14.5 114,-14.5 124,-1.5 124.5,84 110.5,93.5 8,93 -0.5,82.5 0.5,0"/>
+  </object>
+  <object id="2" x="0" y="110" width="688" height="16"/>
+  <object id="3" x="672" y="126" width="14" height="480"/>
+  <object id="4" x="-4" y="592" width="678" height="12"/>
+  <object id="5" x="-10" y="126" width="24" height="466"/>
+ </objectgroup>
 </map>
